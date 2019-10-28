@@ -43,15 +43,6 @@ if __name__ == "__main__":
     # reset the index
     no_empty = no_empty.reset_index(drop=True)
 
-    # for _i, _v in no_empty.iterrows():
-    #     call_procedure('addReview', [_v['review'], _v['word_count'], _v['positive']])
-
-    # len(no_empty[308903:])
-    continue_no_empty = no_empty[346823:]
-    # continue_no_empty.iloc[0]
-    count = 0
-
-    for _i, _v in continue_no_empty.iterrows():
-        count += 1
-        print('adding row nr.', count)
+    for _i, _v in no_empty.iterrows():
         call_procedure('addReview', [_v['review'], _v['word_count'], _v['positive']])
+
