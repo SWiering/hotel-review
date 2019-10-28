@@ -33,7 +33,7 @@ if __name__ == "__main__":
         )
         positive = 1 if positive == 1 else 0
 
-        call_procedure('addReview', [review_content, -1, positive])
+        call_procedure('addReview', [review_content, positive])
 
     print('all done')
 

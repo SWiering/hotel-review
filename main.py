@@ -44,5 +44,5 @@ if __name__ == "__main__":
     no_empty = no_empty.reset_index(drop=True)
 
     for _i, _v in no_empty.iterrows():
-        call_procedure('addReview', [_v['review'], _v['word_count'], _v['positive']])
+        call_procedure('addReview', [_v['review'], _v['positive']])
 
